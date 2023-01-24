@@ -15,7 +15,6 @@ export class TodosComponent {
   value:any;
   ngOnInit(){
     this.value = this.route.snapshot.params['foo'];
-
     if (this.value != '')
       this.appServices.fetchTodoSer(Number(this.value)).subscribe((data: object)=>{
         this.todos = data;

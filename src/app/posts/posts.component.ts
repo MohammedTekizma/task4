@@ -13,7 +13,6 @@ export class PostsComponent {
   value = this.route.snapshot.params['foo'];
   ngOnInit(){
     this.value = this.route.snapshot.params['foo'];
-
     if (this.value != '')
       this.appServices.fetchPostSer(Number(this.value)).subscribe((data: object)=>{
         this.posts = data;

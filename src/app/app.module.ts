@@ -12,6 +12,7 @@ import { AppServices } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+
 const appRoutes: Routes = [
   { path: 'posts', component: PostsComponent },
   { path: 'comments', component: CommentsComponent },

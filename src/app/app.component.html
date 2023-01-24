@@ -1,20 +1,19 @@
 <div class="topnav">
-    <input type="text" placeholder="Search.." [(ngModel)]="value"/>
-    
+  <input type="text" [(ngModel)]="value" class="modules" placeholder="Enter ID">
+  <button class="submit" (click)="navigate()">Search</button>
   </div>
 
 <!-- Side navigation -->
 <div class="sidenav">
-    <a [routerLink]="['/posts',{foo:value}]">Posts</a>
-    <a [routerLink]="['/comments',{foo:value}]">Comments</a>
-    <a [routerLink]="['/albums',{foo:value}]">Albums</a>
-    <a [routerLink]="['/photos',{foo:value}]">Photos</a>
-    <a [routerLink]="['/todos',{foo:value}]">Todos</a>
+    <a [routerLink]="['/posts']" (click)="updateCurrentVal('posts')">Posts</a>
+    <a [routerLink]="['/comments']" (click)="updateCurrentVal('comments')">Comments</a>
+    <a [routerLink]="['/albums']" (click)="updateCurrentVal('albums')">Albums</a>
+    <a [routerLink]="['/photos']" (click)="updateCurrentVal('photos')">Photos</a>
+    <a [routerLink]="['/todos']" (click)="updateCurrentVal('todos')">Todos</a>
   </div>
   
 <!-- Page content -->
 <div class="main">
-    <router-outlet>
-    </router-outlet>
+    <router-outlet></router-outlet>
 </div>
   
