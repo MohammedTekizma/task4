@@ -32,4 +32,9 @@ export class AppServices{
             return this.http.get("https://jsonplaceholder.typicode.com/todos?id="+param);
         return this.http.get("https://jsonplaceholder.typicode.com/todos");
         }
+    fetchUserSer(param?: number){
+        if(param)
+            return this.http.get("https://jsonplaceholder.typicode.com/users?id="+param);
+        return this.http.get("https://jsonplaceholder.typicode.com/users");
+        }
 }

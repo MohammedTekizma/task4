@@ -11,6 +11,7 @@ import { TodosComponent } from './todos/todos.component';
 import { AppServices } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { UsersComponent } from './users/users.component';
 
 
 const appRoutes: Routes = [
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   { path: 'comments', component: CommentsComponent },
   { path: 'albums', component: AlbumsComponent },
   { path: 'photos', component: PhotosComponent },
-  { path: 'todos', component: TodosComponent }
+  { path: 'todos', component: TodosComponent },
+  { path: 'users', component: UsersComponent }
 ];
 
 @NgModule({
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     CommentsComponent,
     AlbumsComponent,
     PhotosComponent,
-    TodosComponent
+    TodosComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

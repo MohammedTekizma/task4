@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {TodosComponent} from './todos/todos.component'
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,7 @@ import {TodosComponent} from './todos/todos.component'
 })
 export class AppComponent{
   title = 'task4';
-  constructor( private router: Router,private activatedRoute: ActivatedRoute) {}
+  constructor( private router: Router) {}
   value!:any;
   currentVal!:string;
 

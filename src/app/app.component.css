@@ -6,8 +6,30 @@
     padding-bottom: 10px;
     width: 100%;
     padding-top: 0px;
+    z-index: 1;
   }
-
+  .topnav button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .topnav button:hover {background-color: #3e8e41}
+  
+  .topnav button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
   /* Style the search box inside the navigation bar */
   .topnav input[type=text] {
     float: left;
