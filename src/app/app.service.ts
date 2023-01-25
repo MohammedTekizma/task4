@@ -6,8 +6,10 @@ export class AppServices{
     httpdata: any;
     constructor(private http: HttpClient) { }
     fetchPostSer(param?: number){
-        if(param)
+        if(param){
+            // console.log(param)
             return this.http.get("https://jsonplaceholder.typicode.com/posts?id="+param);
+        }
         return this.http.get("https://jsonplaceholder.typicode.com/posts");
         }
     fetchAlbumSer(param?: number){
